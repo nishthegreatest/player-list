@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player list FC BARCELONA</title>
+    <link href="practice.css" rel="stylesheet"/>
+</head>
+<body>
+    
+        <main>
+        
+            <script>
+                function updateTime() {
+                    const now = new Date();
+                    let hours = now.getHours();
+                    const minutes = String(now.getMinutes()).padStart(2, '0');
+                    const seconds = String(now.getSeconds()).padStart(2, '0');
+                    
+                    const ampm = hours >= 12 ? 'PM' : 'AM'; // Determine AM or PM
+                    hours = hours % 12; // Convert to 12-hour format
+                    hours = hours ? String(hours).padStart(2, '0') : '12'; // Adjust for 0 hour
+        
+                    document.getElementById('time').textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+                }
+        
+                setInterval(updateTime, 1000); // Update the time every second
+                updateTime(); // Initial call to display time immediately
+            </script>
+
+        
+            <h1>FC BARCELONA</h1>
+            <img src="logooo.png">
+            <p class="year">2024/2025  SQUAD</p>
+            
+            <div class="Squad">
+            <section class="coach-font">
+                <h2 class="white">Coach:</h2><h2 class="coach"> Hansi Flick</h2>
+                <hr>
+                <div class="player-list">
+                <article class="player">
+                    <p class="number">1 </p><p class="name">STEGEN</p>
+                </article>
+                <article class="player">
+                    <p class="number">2</p><p class="name">CUBARCI</p>
+                </article>
+                <article class="player">
+                    <p class="number">3</p><p class="name">BALDE</p>
+                </article>
+                <article class="player">
+                    <p class="number">4</p><p class="name>">R.ARAUJO</p>
+                </article>
+                <article class="player">
+                    <p class="number">5</p><p class="name">MARTINEZ</p>
+                </article>
+                <article class="player">
+                    <p class="number">6</p><p class="name">GAVI</p>
+                </article>
+                <article class="player">
+                    <p class="number">7</p><p class="name">F.TORRES</p>
+                </article>
+                <article class="player">
+                    <p class="number">8</p>PEDRI<p class="name"></p>
+                </article>
+                <article class="player">
+                    <p class="number">9</p>LEWANDOWSKI<p class="name"></p>
+                </article>
+                <article class="player">
+                    <p class="number">10</p>FATI<p class="name"></p>
+                </article>
+                <article class="player">
+                    <p class="number">11</p>RAPHINHA<p class="name"></p>
+                </article>
+                <article class="player">
+                    <p class="number">13</p><p class="name">I.PENA</p>
+                </article>
+                <article class="player">
+                    <p class="number">14</p><p class="name">P.TORRE</p>
+                </article>
+                <article class="player">
+                    <p class="number">15</p><p class="name>">CHRISTENSEN</p>
+                </article>
+                <article class="player">
+                    <p class="number">16</p><p class="name>">F.LOPEZ</p>
+                </article>
+                <article class="player">
+                    <p class="number">17</p><p class="name>">M.CARSADO</p>
+                </article>
+                <article class="player">
+                    <p class="number">18</p><p class="name>">P.VICTOR</p>
+                </article>
+                <article class="player">
+                    <p class="number">19</p><p class="name>">LAMINE YAMAL</p>
+                </article>
+                <article class="player">
+                    <p class="number">20</p><p class="name>">DANI OLMO</p>
+                </article>
+                <article class="player">
+                    <p class="number">21</p><p class="name>">DE JONG</p>
+                </article>
+                <article class="player">
+                    <p class="number">23</p><p class="name>">J. KOUNDE</p>
+                </article>
+                <article class="player">
+                    <p class="number">24</p><p class="name>">ERIC GARCIA</p>
+                </article>
+                <article class="player">
+                    <p class="number">25</p><p class="name>">W. SZCZESNY</p>
+                </article>
+                <article class="player">
+                    <p class="number">28</p><p class="name>">M.BERNAL</p>
+                </article>
+                
+            
+                
+
+            </section>
+
+        </main>
+    </div>
+    
+
+    <!-- Time display -->
+    <div id="time"></div>
+
+    
+</body>
+</html>
